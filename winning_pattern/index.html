@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambola Rules</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        $(function() {
+            $('a[href*=\\#]:not([href=\\#])').on('click', function() {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 500);
+                    return false;
+                }
+            });
+        });
+        </script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="heading">
+            <h2 class="text-center">Tambola Rules</h2>
+        </div>
+        <div class="column-flex" style="padding-top: 83px;">
+            <div class="column-buttons">
+                <a href="#first-row" class="btn btn-primary">First Row</a>
+            </div>
+            <div class="column-buttons">
+                <a href="#second-row" class="btn btn-primary">Second Row</a>
+            </div>
+            <div class="column-buttons">
+                <a href="#third-row" class="btn btn-primary">Third Row</a>
+            </div>
+          
+        </div>
+        <div class="column-flex">
+            <div class="column-buttons">
+                <a href="#novelty" class="btn btn-primary">Novelty</a>
+            </div>
+            <div class="column-buttons">
+                <a href="#plus" class="btn btn-primary">Plus</a>
+            </div>
+            <div class="column-buttons">
+                <a href="#pyramid" class="btn btn-primary">Pyramid</a>
+            </div>
+        </div>
+        <div class="column-flex">
+            <div class="column-buttons">
+                <a href="#fence" class="btn btn-primary">Fence</a>
+            </div>
+            <div class="column-buttons">
+                <a href="#4-corners" class="btn btn-primary">4 Corners</a>
+            </div>
+            <div class="column-buttons">
+                <a href="#full-house" class="btn btn-primary">Full House</a>
+            </div>
+        </div>
+        <div class="content-tambola mt-5" id="first-row">
+            <div class="text-content-tambola">
+                <div class="text-tambola">
+                    <p>First Row</p>
+                </div>
+                <div class="image-ticket">
+                    <img src="images/1stline.jpeg">
+                </div>
+                <div class="ticket-description">
+                    <p>First Row is also called Top Row, 1st line, 1st row. When all Numbers of 1st line of tambola ticket are striked than it gives a chance to claim this prize. There are 5 numbers in a line.
+                        Sometimes people and players ask what is First Row? When First Row gets completed? How to claim First Row. Now with above details and image example given, it is easier to identify how First Row can be checked and claimed.</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-tambola mt-5" id="second-row">
+            <div class="text-content-tambola">
+                <div class="text-tambola">
+                    <p>Second Row</p>
+                </div>
+                <div class="image-ticket">
+                    <img src="images/2ndline.jpeg">
+                </div>
+                <div class="ticket-description">
+                    <p>Sometimes people and players ask what is middle line? When middle line gets completed? How to claim middle line. Now with above details and image example given, it is easier to identify how middle line can be checked and claimed.</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-tambola mt-5" id="third-row">
+            <div class="text-content-tambola">
+                <div class="text-tambola">
+                    <p>Last Row</p>
+                </div>
+                <div class="image-ticket">
+                    <img src="images/3rdline.jpeg">
+                </div>
+                <div class="ticket-description">
+                    <p>Sometimes people and players ask what is bottom line? When bottom line gets completed? How to claim bottom line. Now with above details and image example given, it is easier to identify how bottom line can be checked and claimed.</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-tambola mt-5" id="novelty">
+            <div class="text-content-tambola">
+                <div class="text-tambola">
+                    <p>Novelty</p>
+                </div>
+                <div class="image-ticket">
+                    <img src="images/novelty.jpeg">
+                </div>
+                <div class="ticket-description">
+                    <p>Sometimes people and players ask what is Novelty? When Novelty gets completed? How to claim novelty. Now with above details and image example given, it is easier to identify how corners can be checked and claimed.</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-tambola mt-5" id="4-corners">
+            <div class="text-content-tambola">
+                <div class="text-tambola">
+                    <p>4 Corners</p>
+                </div>
+                <div class="image-ticket">
+                    <img src="images/4corners.jpeg">
+                </div>
+                <div class="ticket-description">
+                    <p>Sometimes people and players ask what is corners? When corners gets completed? How to claim corners. Now with above details and image example given, it is easier to identify how corners can be checked and claimed.</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-tambola mt-5" id="pyramid">
+            <div class="text-content-tambola">
+                <div class="text-tambola">
+                    <p>Pyramid</p>
+                </div>
+                <div class="image-ticket">
+                    <img src="images/pyramid.jpeg">
+                </div>
+                <div class="ticket-description">
+                    <p>Sometimes people and players ask what is pyramid? When pyramid gets completed? How to claim pyramid. Now with above details and image example given, it is easier to identify how pyramid can be checked and claimed.</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-tambola mt-5" id="plus">
+            <div class="text-content-tambola">
+                <div class="text-tambola">
+                    <p>Plus</p>
+                </div>
+                <div class="image-ticket">
+                    <img src="images/plus.jpeg">
+                </div>
+                <div class="ticket-description">
+                    <p>Sometimes people and players ask what is plus? When plus gets completed? How to claim plus. Now with above details and image example given, it is easier to identify how plus can be checked and claimed.</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-tambola mt-5" id="fence">
+            <div class="text-content-tambola">
+                <div class="text-tambola">
+                    <p>Fence</p>
+                </div>
+                <div class="image-ticket">
+                    <img src="images/fence.jpeg">
+                </div>
+                <div class="ticket-description">
+                    <p>Sometimes people and players ask what is surrounding, fence? When surrounding, fence gets completed? How to claim surrounding, fence. Now with above details and image example given, it is easier to identify how surrounding, fence can be checked and claimed.</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-tambola mt-5" id="full-house">
+            <div class="text-content-tambola">
+                <div class="text-tambola">
+                    <p>Full House</p>
+                </div>
+                <div class="image-ticket">
+                    <img src="images/fullhouse.jpeg">
+                </div>
+                <div class="ticket-description">
+                    <p>Full House is the Grand prize in any Tambola game played. It means all 15 Numbers of a ticket are cut, striked out.
+
+                        If the audience is large than host keeps it as multiple like Full House 1, Full House 2 etc.
+                        
+                        A single tambola ticket consists of 15 numbers, so when all 15 are striked it's a full house.
+                        Sometimes people and players ask what is full house? When full house gets completed? How to claim full house. Now with above details and image example given, it is easier to identify how full house can be checked and claimed.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
